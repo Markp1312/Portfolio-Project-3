@@ -30,14 +30,27 @@ def Welcome_to_store():
     
     print("Please make your selection")
     
+def Add_to_basket():
+
+    """
+    This function will collect the selected items from the customer and update the shopping basket accordingly
+    """
+    print("Which item would you like to add to your basket?")
+    x = input()
+    print("How many would you like to add to your basket")
+    y = input()
 
 
-    
 
-def main ()
+
+def main ():
 
     """
     Run the program functions
     """
 
-Welcome_to_store()
+    Welcome_to_store()
+    Add_to_basket()
+
+
+main()
