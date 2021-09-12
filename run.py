@@ -35,14 +35,15 @@ def Add_to_basket():
     """
     This function will collect the selected items from the customer and update the shopping basket accordingly
     """
-    print("Which item would you like to add to your basket?")
-    x = input()
-    print("How many would you like to add to your basket")
-    y = input()
 
-
-
-
+    shopList = []
+    maxLengthList = 6
+    while len(shopList) < maxLengthList:
+            item = input("Enter your Item to the List: ")
+            shopList.append(item)
+            print(shopList)
+        return(shoplist)
+        
 def main ():
 
     """
