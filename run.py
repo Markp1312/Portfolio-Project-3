@@ -31,4 +31,13 @@ def Welcome_to_store():
     print("Please make your selection")
     
 
+
+    
+
+def main ()
+
+    """
+    Run the program functions
+    """
+
 Welcome_to_store()
