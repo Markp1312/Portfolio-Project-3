@@ -15,15 +15,20 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('Mark_PC_Shop')
-PRODUCTS = SHEET.orders
 
-def get_order_data():
+
+def Welcome_to_store():
     """
     This function is to collect the order information from the customer
     """
     
+    products = SHEET.worksheet("orders").get_all_values()[0]
     
     print("Welcome to Mark's PC-SHOP, We currently have the following items in stock\n")
+    for i in products:
+        print(i)
+    
+    print("Please make your selection")
+    
 
-
-get_order_data()
+Welcome_to_store()
